@@ -24,7 +24,7 @@
 %	DOCUMENT CONFIGURATIONS AND INFORMATION
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt, a4paper]{article} % Document font size and paper size
+\documentclass[11pt, a4paper]{memoir} % Document font size and paper size
 
 \usepackage{verse} % Required for typesetting poems - this package drives this template
 \usepackage{geometry}
@@ -32,6 +32,7 @@
 \usepackage{palatino} % Use the Palatino font by default
 \usepackage[swedish]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
 
 %\usepackage{stix} % Alternative Stix font
 
@@ -47,8 +48,12 @@
 
 \pagestyle{empty} % Stop page numbering through the document
 
-\begin{document}
+\epigraphfontsize{\small\itshape}
+\setlength\epigraphwidth{8cm}
+\setlength\epigraphrule{0pt}
 
+\begin{document}
+\epigraphfontsize{\small\itshape}
 %------------------------------------------------------------------------------
 %	
 %----------------------------------------------------------------------------------------
@@ -69,8 +74,6 @@ och dricka
   \item[Öl] The second item
   \item[Annat] The third etc \ldots
 \end{description}
-
-
 
 
 \newgeometry{left=1cm,right=1cm}
@@ -118,6 +121,104 @@ huttar åt lille lille bror.\\!
 
 %----------------------------------------------------------------------------------------
 
+\poemtitle{Mera brännvin i glasen}
+
+\settowidth{\versewidth}{mera bord på kalasen,} % Insert one of the average-sized verses, used for centering the poem
+
+\poemauthorcenter{Okänd}
+\poemauthorcenter{\textbf{Melodi:} Internationalen}
+\begin{verse}[\versewidth]
+
+%------------------------------------------------
+Mera brännvin i glasen,\\
+mera glas på vårt bord,\\
+mera bord på kalasen,\\
+mera kalas på vår jord.\\!
+
+Mera jordar kring månen,\\
+mera månar kring Mars,\\
+mera marscher till Skåne,\\
+mera Skåne, Gud bevars, bevars, bevars!\\!
+%------------------------------------------------
+\end{verse}
+
+%----------------------------------------------------------------------------------------
+
+\poemtitle{Feta fransyskor}
+
+\settowidth{\versewidth}{de trampar druvor som sedan ska jäsas till vin.} % Insert one of the average-sized verses, used for centering the poem
+
+\poemauthorcenter{Okänd}
+\poemauthorcenter{\textbf{Melodi:} Marche Militaire}
+\begin{verse}[\versewidth]
+
+%------------------------------------------------
+Feta fransyskor som svettas om fötterna,\\
+de trampar druvor som sedan ska jäsas till vin.\\
+Transpirationen viktig é, ty den ge’ fin bouquet.\\
+Vårtor och svampar följer me’ men vad gör väl de’?\\!
+
+För… vi vill ha vin, vill ha vin, vill ha mera vin,\\
+även om följderna blir att vi få lida pin.\\
+\textbf{Tjejer:} Flaskan och glaset gått i sin.\\
+\textbf{Pojkar:} Hit med vin, mera vin!\\
+\textbf{Tjejer:} TROR NI ATT VI ÄR FYLLESVIN?\\
+\textbf{Pojkar:} JA! (fast större)\\!
+%------------------------------------------------
+\end{verse}
+
+%----------------------------------------------------------------------------------------
+
+\poemtitle{Var nöjd med allt som vinet ger}
+
+\settowidth{\versewidth}{värst för den som ej spriten tål} % Insert one of the average-sized verses, used for centering the poem
+
+\poemauthorcenter{Okänd}
+\poemauthorcenter{\textbf{Melodi:} Var nöjd med allt som livet ger}
+\begin{verse}[\versewidth]
+
+%------------------------------------------------
+Nu åker botten upp igen\\
+och vettet åker ut med den\\
+Världen blir så vacker, mjuk och skön\\
+värst för den som ej spriten tål\\
+Han hickar fram ett sluddrigt ”skål”\\
+å far sen ner i ett djupt alkohol.\\!
+%------------------------------------------------
+\end{verse}
+
+\epigraph{I dagarna innan sittningen brukar arrande förening panikartat skaffa fram två stycken personer som ska försöka hålla i sittningen. Dessa två personers uppgift är att se till att sittningen drivs framåt och erbjuder någon form av underhållning under tiden man äter och har roligt.}{Dtek wiki - angående toastmasters}
+
+\newpage
+%----------------------------------------------------------------------------------------
+
+\poemtitle{Bordeaux, Bordeaux}
+
+\settowidth{\versewidth}{och rada’ upp flaskor i rader} % Insert one of the average-sized verses, used for centering the poem
+
+\poemauthorcenter{Okänd}
+\poemauthorcenter{\textbf{Melodi:}I sommarens soliga dagar}
+\begin{verse}[\versewidth]
+
+%------------------------------------------------
+Jag minns än idag hur min fader\\
+kom hem ifrån staden så glader\\
+och rada’ upp flaskor i rader\\
+och sade nöjd som så:\\
+''Bordeaux, Bordeaux!''\\!
+
+Han drack ett glas, kom i extas,\\
+och sedan blev det stort kalas.\\
+Och vi små glin, ja vi drack vin\\
+som första klassens fyllesvin.\\
+Och vi dansade runt där på golvet\\
+och skrek så vi blev blå:\\
+''Bordeaux, Bordeaux!''\\!
+%------------------------------------------------
+\end{verse}
+
+%----------------------------------------------------------------------------------------
+
 \poemtitle{Vill ha akvaviten}
 
 \settowidth{\versewidth}{jag borde köpa folkis men vad ska jag ta mig till} % Insert one of the average-sized verses, used for centering the poem
@@ -145,10 +246,9 @@ låt den aldrig ta slut.\\!
 %------------------------------------------------
 \end{verse}
 
-
+\newpage
 %----------------------------------------------------------------------------------------
 
-\newpage
 
 \poemtitle{Vikingen}
 
@@ -173,7 +273,11 @@ Skål för alla vikingar som kom hit!\\!
 %------------------------------------------------
 \end{verse}
 
+\epigraph{Forumet är en plats där alla ska kunna hitta information om hur man arrar i Gasquen. Gammal erfarenhet skall finnas kvar på en och samma plats för alla efterträdare att läsa. För att detta konceptet skall fungera gäller det att använda forumet flitigt och bidra med sina erfarenheter men även fråga om det är något som är oklart.}{GasqueK 08 - angående Gasquens forum}
+
+
 %----------------------------------------------------------------------------------------
+\newpage
 
 \poemtitle{Strejk på Pripps}
 
@@ -193,14 +297,72 @@ Jag drömde om en jättesal där\\
 Jag svepte väl ett tjugotal och\\
 reste mig och sa:\\!
 
-”Men MTS,\\
-det är ju för fan min favorit\\!
+”Är dem blå,\\
+får man ta två.\\!
 
 %------------------------------------------------
 \end{verse}
 
+\epigraph{Tala är silver, men Prippan är blå}{Dtek wiki - angående Pripps Blå}
+
 %----------------------------------------------------------------------------------------
+\epigraphfontsize{\small\itshape}
+%----------------------------------------------------------------------------------------
+\poemtitle{Jag har aldrig vatt på snusen}
+
+\settowidth{\versewidth}{aldrig rökat en cigarr, halleluja!} % Insert one of the average-sized verses, used for centering the poem
+
+\poemauthorcenter{KTH-teknologer, omskriven av chalmerister}
+\poemauthorcenter{\textbf{Melodi:} O hur saligt att få vandra}
+\begin{verse}[\versewidth]
+
+%------------------------------------------------
+Jag har aldrig vatt på snusen,\\
+aldrig rökat en cigarr, halleluja!\\
+Mina dygder äro tusen,\\
+inga syndiga laster jag har.\\!
+
+Jag har aldrig sett nåt naket,\\
+inte ens ett litet nyfött barn.\\
+Mina blickar går mot taket,\\
+därmed undgår jag frestarens garn.\\!
+
+Halleluja, halleluja\dots \\!
+
+Bacchus spelar på gitarren,\\
+Satan spelar på sitt handklaver.\\
+Alla djävlar dansar tango,\\
+säg vad kan man väl önska sig mer?\\!
+
+Jo, att alla bäckar vore brännvin,\\
+Stadsparksdammen fylld med bayerskt öl,\\
+cognac i varenda rännsten\\
+och punsch i varendaste pöl.\\
+Och mera öl\dots\\!
+
+%------------------------------------------------
+\end{verse}
+\begin{figure}[!ht]
+  \caption{Evigt saknad}
+  \centering
+    \includegraphics{rincon}
+\end{figure}
+
+\epigraph{Det finns inget sätt att förklara denna fantastiska höjdpunkt i forumets historia. Jag började se över datum för bokningsmöten och visserligen ligger 22 mars i passande för att den skulle vara relaterad till bokningarna inför mottagningen, men man inser snabbt om man räknar lite att 45 är helt orimligt även i ett sådant sammanhang. Även om alla sexmästare, mot förmodan, var inne och skulle boka samtidigt och hela gasqueK satt och övervakade processen med varsin dator kommer man ändå bara upp i 20-25 pers.}{David D6-12 - angående 45 personer inloggade samtidigt på Gasquens forum.}
+
 \newpage
+\restoregeometry
+\onecolumn
+
+\centering
+    \includegraphics[width=\textwidth]{korsord}
+
+\normalsize
+\newpage
+\newgeometry{left=1cm,right=1cm}
+\twocolumn
+
+
 \poemtitle{Måsen}
 
 \settowidth{\versewidth}{Och tungan lådde vid skepparns gom} % Insert one of the average-sized verses, used for centering the poem
@@ -258,14 +420,6 @@ var han nu full som en kaja. \\
 och mesen svarte: "Jag rökte fröna! \\
 I egen holk, i egen holk." \\!
 
-När nubben blänker i immigt glas \\
-som hoppets strålande stjärna, \\
-då är det avsett att det ska tas \\
-förutan fruktan och gärna. \\
-Så klang och klingom, så tar vi supen, \\
-den läskar härligt den torra strupen. \\
-Ja, skål gutår, ja, skål gutår! \\!
-
 Jag tänker sälja min dromedar. \\
 Jag tänker flytta till norden. \\
 Vem vill va’ bosatt uti ett land, \\
@@ -290,6 +444,14 @@ för planet svängde så knasigt. \\
 men planet svarte: ''Jag vill ju ner'' \\
 ''mot alla hjon på Västerbron.'' \\!
 
+Det satt en mås i en kladdig ring\\
+Kasta kapsyler mot glasen\\
+Men han träffa just ingenting\\
+Han var ej inne i fasen\\
+Jag kan ej sikta, ej se mitt mål\\
+Jag måste skaffa en overall\\
+Bli sexmästerist, det vill jag visst!\\!
+
 
 %------------------------------------------------
 \end{verse}
@@ -298,46 +460,16 @@ men planet svarte: ''Jag vill ju ner'' \\
 \restoregeometry
 \onecolumn
 
-\Huge{Här kan man lägga in nått pyssel}
+Ifall sittningen är tråkig vill vi uppmuntra till roliga kreativa inslag som tidsfördriv. Här kommer fyra typer av orogami man kan vika utav endast detta sånghäfte. 
+
+\centering
+    \includegraphics[width=\textwidth]{orogami}
+
 \normalsize
 \newpage
 \newgeometry{left=1cm,right=1cm}
 \twocolumn
-%----------------------------------------------------------------------------------------
-\poemtitle{Jag har aldrig vatt på snusen}
 
-\settowidth{\versewidth}{aldrig rökat en cigarr, halleluja!} % Insert one of the average-sized verses, used for centering the poem
-
-\poemauthorcenter{KTH-teknologer, omskriven av chalmerister}
-\poemauthorcenter{\textbf{Melodi:} O hur saligt att få vandra}
-\begin{verse}[\versewidth]
-
-%------------------------------------------------
-Jag har aldrig vatt på snusen,\\
-aldrig rökat en cigarr, halleluja!\\
-Mina dygder äro tusen,\\
-inga syndiga laster jag har.\\!
-
-Jag har aldrig sett nåt naket,\\
-inte ens ett litet nyfött barn.\\
-Mina blickar går mot taket,\\
-därmed undgår jag frestarens garn.\\!
-
-Halleluja, halleluja\dots \\!
-
-Bacchus spelar på gitarren,\\
-Satan spelar på sitt handklaver.\\
-Alla djävlar dansar tango,\\
-säg vad kan man väl önska sig mer?\\!
-
-Jo, att alla bäckar vore brännvin,\\
-Stadsparksdammen fylld med bayerskt öl,\\
-cognac i varenda rännsten\\
-och punsch i varendaste pöl.\\
-Och mera öl\dots\\!
-
-%------------------------------------------------
-\end{verse}
 
 \poemtitle{Jävlaranammas sittningsvisa}
 
@@ -416,6 +548,8 @@ Inga sorger finnas mer när punsch vi får.\\!
 %------------------------------------------------
 \end{verse}
 
+\epigraph{Tidigare hade folk skrivit gyckel innan sittningen som de sedan framförde, en variant är även att skriva gycklet under sittningens gång. Det finns även personer som haft signaturgyckel som de drar på varje sittning. På senare tid har det dock avtagit lite med gyckel eftersom föreningar tror att de har gyckel som ska göras av tradition. Detta har smittat av sig på de nya som tror att gyckel bara är någonting tråkigt man gör för att skämma ut sig själv.}{Dtek wiki - angående gyckel}
+
 %----------------------------------------------------------------------------------------
 \poemtitle{Sista punschvisan}
 
@@ -438,6 +572,8 @@ får det va’ till sämre dar. :|\\!
 
 %------------------------------------------------
 \end{verse}
+
+\epigraph{Vidare håller man vinglas med stjälk i just stjälken. De som arrar vet precis vilken temperatur Rincon:en ska serveras vid och följer självklart detta. Dina flottiga fingrar ska inte värma vinet genom att hålla i kupan.}{Dtek wiki - angående etikett på sittning}
 
 
 \restoregeometry
